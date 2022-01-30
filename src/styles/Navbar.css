@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  padding: 1.125rem;
+  height: 2.375rem;
+  z-index: 1;
+
+  position: fixed;
+  top: 0;
+
+  transition-timing-function: ease-in;
+  transition: all 500ms;
+}
+
+.scrolled {
+  background-color: #111;
+}
+
+.navbar_contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_logo {
+  position: fixed;
+  top: -0.3125rem;
+  left: 0;
+  width: 9rem;
+  cursor: pointer;
+  object-fit: contain;
+  padding-left: 1.25rem;
+}
+
+.nav_avatar {
+  position: fixed;
+  top: 1.125rem;
+  right: 1.25rem;
+  width: 2.375rem;
+  cursor: pointer;
+}
