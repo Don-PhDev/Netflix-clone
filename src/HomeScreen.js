@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Banner from "./Banner";
 import "./styles/HomeScreen.css";
 
 function HomeScreen() {
@@ -6,8 +7,8 @@ function HomeScreen() {
     <div className="home-screen">
       <Navbar />
 
-      {/* <Banner />
-      <Row /> */}
+      <Banner />
+      {/* <Row /> */}
     </div>
   );
 }
