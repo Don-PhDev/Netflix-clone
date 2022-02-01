@@ -1,8 +1,8 @@
-import Navbar from "./Navbar";
-import Banner from "./Banner";
-import Row from "./Row";
-import requests from "./Requests";
-import "./styles/HomeScreen.css";
+import Navbar from "../Navbar";
+import Banner from "../Banner";
+import Row from "../Row";
+import requests from "../Requests";
+import "../styles/HomeScreen.css";
 
 function HomeScreen() {
   return (
