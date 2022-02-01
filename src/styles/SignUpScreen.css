@@ -1,0 +1,86 @@
+.sign-up-screen {
+  max-width: 18.75rem;
+  padding: 4.375rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.sign-up-title {
+  color: #fff;
+  font-size: 2.375rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  text-align: left;
+}
+
+.sign-up-screen > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-screen > form > .sign-up-email,
+.sign-up-password {
+  outline-width: 0;
+  color: #fff;
+  height: 3.125rem;
+  margin-bottom: 0.875rem;
+  padding: 0.125rem 1rem 0.125rem 1.25rem;
+
+  font-size: 1rem;
+  background: #333;
+
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.sign-up-screen > form > button {
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0 0.75rem;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #e50914;
+
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.sign-up-screen > form > button:hover {
+  background: #f40612;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me > label {
+  margin-left: 0.25rem;
+  color: #737373;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sign-up-screen > h4 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #737373;
+  margin-top: 1.875rem;
+}
+
+.sign-up-screen-white {
+  color: #fff;
+  margin-left: 0.3125rem;
+}
+
+.sign-up-link {
+  cursor: pointer;
+}
+
+.sign-up-link:hover {
+  text-decoration: underline;
+}
