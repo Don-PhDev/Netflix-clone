@@ -66,7 +66,6 @@
   padding: 0.625rem 1.25rem;
 
   font-size: 1rem;
-  font-weight: 600;
   color: #fff;
   background-color: #e50914;
   border: none;
@@ -100,4 +99,8 @@
   font-size: 0.875rem;
   font-weight: 600;
   margin: 0 0 0 0.5em;
+}
+
+.email-form-cta-btn:hover {
+  background: #f40612;
 }

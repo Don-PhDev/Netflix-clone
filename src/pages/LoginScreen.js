@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import SignUpScreen from "./SignUpScreen";
+import { useState } from "react";
 import "../styles/LoginScreen.css";
 
 function LoginScreen() {
@@ -18,30 +19,34 @@ function LoginScreen() {
 
         <div className="login-screen-bg-gradient" />
         <div className="login-screen-body">
-          <>
-            <h1 className="login-screen-title">
-              Unlimited films, TV <br />
-              programmes and more.
-            </h1>
-            <h2 className="login-screen-subtitle">
-              Watch anywhere. Cancel at any time.
-            </h2>
-            <h3 className="email-form-title">
-              Ready to watch? Enter your email to create or restart your
-              membership.
-            </h3>
-            <div className="email-form-contents">
-              <form>
-                <input type="email" placeholder="Email address" />
-                <button
-                  onClick={() => setSignIn(true)}
-                  className="email-form-cta-btn"
-                >
-                  Get Started
-                </button>
-              </form>
-            </div>
-          </>
+          {signIn ? (
+            <SignUpScreen />
+          ) : (
+            <>
+              <h1 className="login-screen-title">
+                Unlimited films, TV <br />
+                programmes and more.
+              </h1>
+              <h2 className="login-screen-subtitle">
+                Watch anywhere. Cancel at any time.
+              </h2>
+              <h3 className="email-form-title">
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </h3>
+              <div className="email-form-contents">
+                <form>
+                  <input type="email" placeholder="Email address" />
+                  <button
+                    onClick={() => setSignIn(true)}
+                    className="email-form-cta-btn"
+                  >
+                    Get Started
+                  </button>
+                </form>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>
