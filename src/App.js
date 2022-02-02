@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./pages/HomeScreen";
 import LoginScreen from "./pages/LoginScreen";
+import ProfileScreen from "./pages/ProfileScreen";
 import "./App.css";
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
@@ -22,12 +23,12 @@ function App() {
         );
         console.log(userAuth);
       } else {
-        dispatch(logout);
+        dispatch(logout());
       }
     });
 
     return unsubscribe;
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="app">
@@ -36,6 +37,7 @@ function App() {
           <LoginScreen />
         ) : (
           <Routes>
+            <Route exact path="/profile" element={<ProfileScreen />}></Route>
             <Route exact path="/" element={<HomeScreen />}></Route>
           </Routes>
         )}
