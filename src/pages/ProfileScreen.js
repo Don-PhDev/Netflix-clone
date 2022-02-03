@@ -3,6 +3,7 @@ import { selectUser } from "../features/userSlice";
 import { auth } from "../firebase";
 import Navbar from "../Navbar";
 import "../styles/ProfileScreen.css";
+import PlansScreen from "./PlansScreen";
 
 function ProfileScreen() {
   const user = useSelector(selectUser);
@@ -23,6 +24,7 @@ function ProfileScreen() {
               Plans (Current Plan: premium)
             </h3>
             <div className="profile-screen-plans">
+              <PlansScreen />
               <button
                 onClick={() => {
                   auth.signOut();
